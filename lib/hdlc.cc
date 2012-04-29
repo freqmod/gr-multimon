@@ -332,8 +332,8 @@ multimon_hdlc::general_work (int noutput_items,
                 //printf("Packet recieved %d, %s\n", check_crc_ccitt(packet, pkglen), packet);
             }
         }        
-        //packet = NULL;
-        //pkglen = 0; 
+        packet = NULL;
+        pkglen = 0; 
     }
   }
   // Tell runtime system how many input items we consumed on
