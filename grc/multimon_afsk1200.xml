@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<block>
+  <name>AFSK 1200 decoder</name>
+  <key>afsk_1200</key>
+  <category>Digital Modulators</category>
+  <throttle>0</throttle>
+  <import>import multimon</import>
+  <make>multimon.afsk1200()</make>
+  <sink>
+    <name>in</name>
+    <type>float</type>
+    <nports>1</nports>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+    <nports>1</nports>
+  </source>
+</block>

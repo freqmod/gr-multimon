@@ -1,0 +1,10 @@
+Multimon which this module wraps is 
+ *      Copyright (C) 1996  
+ *          Thomas Sailer (sailer@ife.ee.ethz.ch, hb9jnx@hb9w.che.eu)
+ *
+under GPLv2.
+
+The wrapper is copyright Frederik M.J.V. (2012) under GPLv2 (see lib/multimon).
+
+This is very rough code, and will probably be reorganized a few times. Don't expect code or grc-graphs using this code to work with the next version.
+APRS sample (at least at the moment):http://lekebilen.com/aprs_gr_12k.bin

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<block>
+  <name>AX.25 (HDLC) framer</name>
+  <key>hdlc</key>
+  <category>Digital</category>
+  <throttle>0</throttle>
+  <import>import multimon</import>
+  <make>multimon.hdlc()</make>
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+    <nports>1</nports>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+    <nports>1</nports>
+  </source>
+</block>
