@@ -5,7 +5,7 @@ Multimon which this module wraps is
 under GPLv2.
 
 The wrapper is copyright Frederik M.J.V. (2012) under GPLv2 (see lib/multimon).
-For the demod to work it needs a samplerate of 22050hz.
+For the demod to work it needs a samplerate of 12000hz.
 
 This is very rough code, and will probably be reorganized a few times. Don't expect code or grc-graphs using this code to work with the next version.
 APRS sample (at least at the moment):http://lekebilen.com/aprs_gr_12k.bin

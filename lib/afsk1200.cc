@@ -64,7 +64,7 @@ static const struct demod_param *dem[] = { ALL_DEMOD };
 //For AFSK1200
 #define FREQ_MARK  1200
 #define FREQ_SPACE 2200
-#define FREQ_SAMP  22050
+#define FREQ_SAMP  12000
 #define BAUD       1200
 #define SUBSAMP    2
 

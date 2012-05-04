@@ -322,15 +322,15 @@ multimon_hdlc::general_work (int noutput_items,
 //    printf("Sentbit[%d]%d\n", i, in[i]);
     if(packet!=NULL){
 //        packet[pkglen]=0;
-        if (pkglen > 10){    	   	
+        if (pkglen > 9){    	   	
             if (check_crc_ccitt(packet, pkglen)){
                 if(outlen){
                     printf("Warning, got more than one packet per invocation, only the last packet will be relayed\n");
                 }
                 outlen = noutput_items < pkglen ? noutput_items : pkglen; 
                 memcpy(output_items[0], packet, outlen);
-                //printf("Packet recieved %d, %s\n", check_crc_ccitt(packet, pkglen), packet);
             }
+            //printf("Packet recieved %d, %s\n", check_crc_ccitt(packet, pkglen), packet);
         }        
         packet = NULL;
         pkglen = 0; 
