@@ -23,6 +23,7 @@
 
 #include "hdlc.h"
 #include <string.h>
+#include <stdio.h>
 #include <gr_io_signature.h>
 
 /* ---------------------------------------------------------------------- */

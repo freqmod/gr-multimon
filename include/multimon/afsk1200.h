@@ -24,7 +24,7 @@
  
 //#include <gr_hier_block2.h>
 
- #include <gr_block.h>
+#include <gr_block.h>
 extern "C"{
  #include <multimon.h>
 }

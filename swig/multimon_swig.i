@@ -1,8 +1,8 @@
 /* -*- c++ -*- */
 
+%include "std_common.i"                            // the common stuff
 %include "exception.i"
 %import "gnuradio.i"                            // the common stuff
-
 %{
 #include "gnuradio_swig_bug_workaround.h"       // mandatory bug fix
 #include "afsk1200.h"

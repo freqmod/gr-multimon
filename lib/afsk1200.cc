@@ -31,6 +31,8 @@
 #endif
 
 #include "filter.h"
+#include <stdio.h>
+#include <stdarg.h>
 #include <afsk1200.h>
 #include <gr_io_signature.h>
 
