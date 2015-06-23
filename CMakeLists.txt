@@ -83,19 +83,8 @@ set(GRC_BLOCKS_DIR      ${GR_PKG_DATA_DIR}/grc/blocks)
 ########################################################################
 # Find gnuradio build dependencies
 ########################################################################
-find_package(Gruel)
-find_package(GnuradioCore)
-#find_package(GnuradioAudio)
-#find_package(LibUSB)
-
-if(NOT GRUEL_FOUND)
-    message(FATAL_ERROR "Gruel required to compile afsk")
-endif()
-
-if(NOT GNURADIO_CORE_FOUND)
-    message(FATAL_ERROR "GnuRadio Core required to compile afsk")
-endif()
-
+set(GR_REQUIRED_COMPONENTS RUNTIME)
+find_package(Gnuradio "3.7.2" REQUIRED)
 
 ########################################################################
 # Setup the include and linker paths
@@ -105,17 +94,13 @@ include_directories(
     ${CMAKE_SOURCE_DIR}/lib/multimon/
     ${CMAKE_SOURCE_DIR}/lib
     ${Boost_INCLUDE_DIRS}
-    ${GRUEL_INCLUDE_DIRS}
-    ${GNURADIO_CORE_INCLUDE_DIRS}
-#    ${LIBUSB_INCLUDE_DIR}
+    ${GNURADIO_ALL_INCLUDE_DIRS}
     ${LIBRTLSDR_INCLUDE_DIR}
 )
 
 link_directories(
     ${Boost_LIBRARY_DIRS}
-    ${GRUEL_LIBRARY_DIRS}
-    ${GNURADIO_CORE_LIBRARY_DIRS}
-#    ${LIBUSB_LIBRARY_DIRS}
+    ${GNURADIO_RUNTIME_LIBRARY_DIRS}
     ${LIBRTLSDR_LIBRARIES}
 )
 

@@ -24,7 +24,7 @@
  
 //#include <gr_hier_block2.h>
 
-#include <gr_block.h>
+#include <gnuradio/block.h>
 extern "C"{
  #include <multimon.h>
 }
@@ -33,7 +33,7 @@ extern "C"{
  
  /*
   * We use boost::shared_ptr's instead of raw pointers for all access
-  * to gr_blocks (and many other data structures).  The shared_ptr gets
+  * to gr::block's (and many other data structures).  The shared_ptr gets
   * us transparent reference counting, which greatly simplifies storage
   * management issues.  This is especially helpful in our hybrid
   * C++ / Python system.
@@ -60,7 +60,7 @@ __GR_ATTR_EXPORT multimon_hdlc_sptr make_multimon_hdlc ();// (const std::string 
   *
   * \sa howto_square2_ff for a version that subclasses gr_sync_block.
   */
- class multimon_hdlc : public gr_block
+ class multimon_hdlc : public gr::block
  {
  private:
    // The friend declaration allows howto_make_square_ff to

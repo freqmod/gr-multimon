@@ -35,8 +35,7 @@ add_library(gnuradio-multimon SHARED
 
 target_link_libraries(gnuradio-multimon
     ${Boost_LIBRARIES}
-    ${GRUEL_LIBRARIES}
-    ${GNURADIO_CORE_LIBRARIES}
+    ${GNURADIO_RUNTIME_LIBRARIES}
 )
 
 set_target_properties(gnuradio-multimon PROPERTIES DEFINE_SYMBOL "gnuradio_multimon_EXPORTS")
