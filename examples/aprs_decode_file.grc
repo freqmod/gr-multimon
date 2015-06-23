@@ -167,7 +167,7 @@
     </param>
   </block>
   <block>
-    <key>gr_null_sink</key>
+    <key>blocks_null_sink</key>
     <param>
       <key>id</key>
       <value>gr_null_sink_1</value>
@@ -194,7 +194,7 @@
     </param>
   </block>
   <block>
-    <key>gr_file_source</key>
+    <key>blocks_file_source</key>
     <param>
       <key>id</key>
       <value>gr_file_source_0</value>
@@ -308,7 +308,7 @@
     </param>
   </block>
   <block>
-    <key>gr_throttle</key>
+    <key>blocks_throttle</key>
     <param>
       <key>id</key>
       <value>gr_throttle_0</value>
@@ -339,7 +339,7 @@
     </param>
   </block>
   <block>
-    <key>gr_add_const_vxx</key>
+    <key>blocks_add_const_vxx</key>
     <param>
       <key>id</key>
       <value>gr_add_const_vxx_0</value>
@@ -370,7 +370,7 @@
     </param>
   </block>
   <block>
-    <key>gr_float_to_int</key>
+    <key>blocks_float_to_int</key>
     <param>
       <key>id</key>
       <value>gr_float_to_int_0</value>
@@ -397,7 +397,7 @@
     </param>
   </block>
   <block>
-    <key>gr_uchar_to_float</key>
+    <key>blocks_uchar_to_float</key>
     <param>
       <key>id</key>
       <value>gr_uchar_to_float_0</value>
@@ -416,7 +416,7 @@
     </param>
   </block>
   <block>
-    <key>blks2_nbfm_rx</key>
+    <key>analog_nbfm_rx</key>
     <param>
       <key>id</key>
       <value>blks2_nbfm_rx_0</value>
@@ -470,7 +470,7 @@
     </param>
   </block>
   <block>
-    <key>blks2_rational_resampler_xxx</key>
+    <key>rational_resampler_xxx</key>
     <param>
       <key>id</key>
       <value>blks2_rational_resampler_xxx_0</value>
@@ -559,7 +559,7 @@
     </param>
   </block>
   <block>
-    <key>gr_message_sink</key>
+    <key>blocks_message_sink</key>
     <param>
       <key>id</key>
       <value>gr_message_sink_0</value>
