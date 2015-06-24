@@ -24,7 +24,7 @@
 #include "hdlc.h"
 #include <string.h>
 #include <stdio.h>
-#include <gr_io_signature.h>
+#include <gnuradio/io_signature.h>
 
 /* ---------------------------------------------------------------------- */
 
@@ -247,9 +247,9 @@ make_multimon_hdlc()//(const std::string &args)
 }
 
 multimon_hdlc::multimon_hdlc()//struct demod_state *s)
-  : gr_block ("multimon_hldc",
-              gr_make_io_signature (1, 1, sizeof (char)),
-              gr_make_io_signature (1, 1, sizeof (char)))
+  : gr::block ("multimon_hldc",
+              gr::io_signature::make (1, 1, sizeof (char)),
+              gr::io_signature::make (1, 1, sizeof (char)))
 {
    s = (demod_state*) malloc(sizeof(demod_state));
    memset(s, 0, sizeof(*s));

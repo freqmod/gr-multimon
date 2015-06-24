@@ -34,7 +34,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <afsk1200.h>
-#include <gr_io_signature.h>
+#include <gnuradio/io_signature.h>
 
 /*
  * Create a new instance of multimon_afsk1200 and return
@@ -50,7 +50,7 @@ make_multimon_afsk1200()//(const std::string &args)
 /*
  * Specify constraints on number of input and output streams.
  * This info is used to construct the input and output signatures
- * (2nd & 3rd args to gr_block's constructor).  The input and
+ * (2nd & 3rd args to gr::block's constructor).  The input and
  * output signatures are used by the runtime system to
  * check that a valid number and type of inputs and outputs
  * are connected to this block.  In this case, we accept
@@ -85,9 +85,9 @@ static float corr_space_q[CORRLEN];
  * The private constructor
  */
 multimon_afsk1200::multimon_afsk1200 ()
-  : gr_block ("multimon_afsk1200_demod",
-              gr_make_io_signature (MIN_IN, MAX_IN, sizeof (float)),
-              gr_make_io_signature (MIN_OUT, MAX_OUT, sizeof (char)))
+  : gr::block ("multimon_afsk1200_demod",
+              gr::io_signature::make (MIN_IN, MAX_IN, sizeof (float)),
+              gr::io_signature::make (MIN_OUT, MAX_OUT, sizeof (char)))
 {
    state = (demod_state*) malloc(sizeof(demod_state));
    memset(state, 0, sizeof(*state));
